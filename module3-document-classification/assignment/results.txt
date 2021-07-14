@@ -1,0 +1,25 @@
+Version 1.0
+Simple tokenizer (removing special chars + splitting on space)
+tfidf vecotrizer with inbuilt english stopwords
+random forest classifier
+Trained HP:
+{'clf__n_estimators': 800,
+ 'clf__min_samples_split': 5,
+ 'clf__min_samples_leaf': 1,
+  'clf__max_features': 'sqrt',
+ 'clf__max_depth': None}
+0.7530562347188264
+
+ Version 1.1
+ Same as 1.0 but with SVD step after vectorizer
+ ~70%
+ *didn't hyperparameter tune
+
+ Version 1.2
+ Same as 1.0 but with stemming included in tokenizer
+ 0.7469437652811736
+
+ Version 1.3
+ Same as 1.0 but with word lemmatization in tokenizer
+ 0.7518337408312958
+
